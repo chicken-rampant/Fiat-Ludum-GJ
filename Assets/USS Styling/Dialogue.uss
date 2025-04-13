@@ -1,0 +1,13 @@
+.DialogueBox {
+    font-size: 40px;
+    -unity-text-align: upper-left;
+    align-content: flex-start;
+    align-self: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 0%;
+    padding-right: 0;
+    padding-left: 0%;
+    top: 65%;
+    left: 8%;
+}
