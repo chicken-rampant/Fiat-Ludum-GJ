@@ -1,0 +1,18 @@
+.button {
+    font-size: 48px;
+    width: 17%;
+    height: 13%;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.78);
+}
+
+.button:hover {
+    scale: 1.05 1.05;
+    transition-property: scale;
+    transition-duration: 0.15s;
+}
+
+.gachamenu {
+}
+
+.gachamenu:hover {
+}
