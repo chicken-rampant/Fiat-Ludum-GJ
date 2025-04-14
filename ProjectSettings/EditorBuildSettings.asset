@@ -17,5 +17,80 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameMenu.unity
     guid: 902418f67468040fa93cf0fbb29b2b28
+  - enabled: 1
+    path: Assets/Scenes/Endings/Cockroach.unity
+    guid: 875bfbfc0fa0b49e187b60b9f853f712
+  - enabled: 1
+    path: Assets/Scenes/Endings/CreditCardDebt.unity
+    guid: beb1f10ce4582459499c2cfda81b64a9
+  - enabled: 1
+    path: Assets/Scenes/Endings/Disowned.unity
+    guid: 9b166c65bc8f54f7d9f53b6edf81970a
+  - enabled: 1
+    path: Assets/Scenes/Endings/FriesInTheBag.unity
+    guid: ebdd98a9ba2cd414583c8f5b15deff27
+  - enabled: 1
+    path: Assets/Scenes/Endings/GoodEnd.unity
+    guid: bf106cab865764ef2b0e80f2621ce8e3
+  - enabled: 1
+    path: Assets/Scenes/Endings/GrassAllergy.unity
+    guid: d747c0bba4c7648a8abf59dbdfb5d5fb
+  - enabled: 1
+    path: Assets/Scenes/Endings/Isekai.unity
+    guid: b7c6fde2f00cc4adba87a7c7dea9a4ab
+  - enabled: 1
+    path: Assets/Scenes/Endings/StayHomeSon.unity
+    guid: f21390fb0ed984ea8856bd7e78907309
+  - enabled: 1
+    path: Assets/Scenes/Endings/Withdrawals.unity
+    guid: ec023cb21489b4191b83e07610648515
+  - enabled: 1
+    path: Assets/Scenes/Events/Allowance.unity
+    guid: 26abf068c86c84de98749c1f55029905
+  - enabled: 1
+    path: Assets/Scenes/Events/AsianMom.unity
+    guid: 30027dcaf8a4d4f4ba7b966986d4894c
+  - enabled: 1
+    path: Assets/Scenes/Options/Art.unity
+    guid: 4ab5feb2d5ef2442fb0c3c8113eff581
+  - enabled: 1
+    path: Assets/Scenes/Options/AzurLane.unity
+    guid: c12b25dc4ed0f4108b1129334873e04c
+  - enabled: 1
+    path: Assets/Scenes/Options/Cleaning.unity
+    guid: 615b84a6b12124149aee1e080d08a44f
+  - enabled: 1
+    path: Assets/Scenes/Options/FGO.unity
+    guid: 21810375f56534fa488a7c82c56f8f60
+  - enabled: 1
+    path: Assets/Scenes/Options/Friends.unity
+    guid: df9939fe7564f46fea66792f5766801b
+  - enabled: 1
+    path: Assets/Scenes/Options/Genshin.unity
+    guid: 5334a43fc4aff457dad334c2e2184db0
+  - enabled: 1
+    path: Assets/Scenes/Options/LeetCode.unity
+    guid: 84e320b198c654fcdbd333ebaa280c22
+  - enabled: 1
+    path: Assets/Scenes/Options/Outside.unity
+    guid: e6aebb56904f5434fa066036f4f168fe
+  - enabled: 1
+    path: Assets/Scenes/Options/Prosekai.unity
+    guid: 22b9a8a34191a442788a1a2099ad70f3
+  - enabled: 1
+    path: Assets/Scenes/Options/Shower.unity
+    guid: b488e441f7af04fe29d18370bf1c0f93
+  - enabled: 1
+    path: Assets/Scenes/Options/Sleep.unity
+    guid: 96a5c5ef867c7478c9259557dd7eba17
+  - enabled: 1
+    path: Assets/Scenes/Options/SocialMedia.unity
+    guid: 73dcaad1150d145ef907eb9768ceb75e
+  - enabled: 1
+    path: Assets/Scenes/Events/SleepDeprived.unity
+    guid: f29547c8ced234d30873db3e54434973
+  - enabled: 1
+    path: Assets/Scenes/Events/StressGachaing.unity
+    guid: 3921f1c96bdd2491b9a1cb8e301c3081
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
