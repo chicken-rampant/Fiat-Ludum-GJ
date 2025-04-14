@@ -1574,11 +1574,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeIncrement: 1
-  moodIncrement: -3
+  moodIncrement: -5
   moneyIncrement: 0
-  hygeineIncrement: 0
-  dilligenceIncrement: 5
-  charismaIncrement: 0
+  hygeineIncrement: 2
+  dilligenceIncrement: 2
+  charismaIncrement: 2
+--- !u!114 &1422463618 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+  m_PrefabInstance: {fileID: 1422463613}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422463614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1485785956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,7 +1820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c612dc93dd5a493b97f5ae8d8621071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueRunner: {fileID: 0}
+  dialogueRunner: {fileID: 1422463618}
 --- !u!1 &1862477480
 GameObject:
   m_ObjectHideFlags: 0

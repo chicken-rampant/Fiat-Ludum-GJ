@@ -1266,6 +1266,10 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+      propertyPath: startNode
+      value: Sleep
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: yarnProject
       value: 
       objectReference: {fileID: 7545569452688597077, guid: 4897ac87132ce4020b61de0def022f92, type: 3}
@@ -1570,7 +1574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeIncrement: 1
-  moodIncrement: -3
+  moodIncrement: 5
   moneyIncrement: 0
   hygeineIncrement: 0
   dilligenceIncrement: 5
@@ -1691,7 +1695,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2084933650423168881, guid: 2bf52b74ae5743b499339133c0e57e7c, type: 3}
+  m_Sprite: {fileID: 8197047826604361390, guid: 5706d654b04054683aa31991c6a016dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
