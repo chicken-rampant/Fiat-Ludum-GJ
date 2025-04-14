@@ -1,13 +1,12 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
     private UIDocument document;
-    private UnityEngine.UIElements.Button button;
+    private Button button;
     GameObject music;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,7 +14,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         music = GameObject.FindWithTag("Music");
         document = GetComponent<UIDocument>();
-        button = document.rootVisualElement.Q("startbutton") as UnityEngine.UIElements.Button;  
+        button = document.rootVisualElement.Q("startbutton") as Button;  
         button.RegisterCallback<ClickEvent>(onPlayGameClicked);
     }
     void Start()

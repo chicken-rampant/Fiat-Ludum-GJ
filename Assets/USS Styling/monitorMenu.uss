@@ -1,0 +1,47 @@
+.button {
+    font-size: 48px;
+    width: 17%;
+    height: 13%;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.78);
+}
+
+.button:hover {
+    scale: 1.05 1.05;
+    transition-property: scale;
+    transition-duration: 0.15s;
+}
+
+.gachabutton {
+    width: 46%;
+    height: 46%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.gachabutton:hover {
+    scale: 1.025 1.025;
+    transition-property: scale;
+    transition-duration: 0.1s;
+}
+
+.GachaPanelActive {
+    transition-duration: 0.3s;
+    position: absolute;
+    height: 989px;
+    width: 885px;
+    top: 30px;
+    left: 503px;
+    background-color: rgb(245, 245, 220);
+    opacity: 1;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.GachaPanelDefault {
+    top: -100%;
+    opacity: 0;
+}

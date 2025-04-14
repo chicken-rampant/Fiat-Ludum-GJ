@@ -1,9 +1,0 @@
-<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/monitorMenu.uss?fileID=7433441132597879392&amp;guid=58442d44b2eea4ab4b22cc23e04c6de8&amp;type=3#monitorMenu" />
-    <ui:VisualElement style="flex-grow: 1;">
-        <ui:Button text="Gacha" name="Gacha" class="button gachamenu" style="left: 34%; top: 21%; font-size: 48px;" />
-        <ui:Button text="Art" name="Art" class="button" style="left: 56%; top: 27%;" />
-        <ui:Button text="Leet Code" name="LeetCode" class="button" style="width: 13%; left: 25%; top: 32%;" />
-        <ui:Button text="Art&#10;" name="Art" class="button" style="left: 40%; top: 19%; width: 13%;" />
-    </ui:VisualElement>
-</ui:UXML>

@@ -1,6 +1,0 @@
-<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/Dialogue.uss?fileID=7433441132597879392&amp;guid=faca0fcd23bc541229280503c93d2663&amp;type=3#Dialogue" />
-    <ui:VisualElement name="Container" style="flex-grow: 1;">
-        <ui:Label text="Label" name="DialogueBox" class="DialogueBox" style="width: 84%; height: 30%;" />
-    </ui:VisualElement>
-</ui:UXML>
