@@ -25,7 +25,12 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Space)||Input.GetKeyDown(KeyCode.Return))
+        {
+            //Debug.Log("continue clicked");
+            DontDestroyOnLoad(music);
+            SceneManager.LoadSceneAsync("IntroDialogue");        
+        }
     }
 
     private void OnDisable()

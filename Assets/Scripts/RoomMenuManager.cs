@@ -41,6 +41,29 @@ public class RoomMenuManager : MonoBehaviour
         }
     }
 
+    private void statUI()
+    {
+        float normalizedMood = (StatTracker.instance.mood+50)/100;
+        float normalizedCharisma = (StatTracker.instance.charisma+50)/100;
+        float normalizedDiligence = (StatTracker.instance.dilligence+50)/100;
+        float normalizedHygeine = (StatTracker.instance.hygeine+50)/100;
+
+        Label diligenceField = document.rootVisualElement.Q("Diligence") as Label;
+        Label charismaField = document.rootVisualElement.Q("Charisma") as Label;
+        Label hygeineField = document.rootVisualElement.Q("Mood") as Label;
+        Label moodField = document.rootVisualElement.Q("Hygeine") as Label;
+        diligenceField.style.color = new Color(2.0f * (1-normalizedDiligence), 2.0f * normalizedDiligence, 0);
+        charismaField.style.color = new Color(2.0f * (1-normalizedCharisma), 2.0f * normalizedCharisma, 0);
+        hygeineField.style.color = new Color(2.0f * (1-normalizedHygeine), 2.0f * normalizedHygeine, 0);
+        moodField.style.color = new Color(2.0f * (1-normalizedMood), 2.0f * normalizedMood, 0);
+
+        document.rootVisualElement.Q("Diligence").dataSource = StatTracker.instance;
+        document.rootVisualElement.Q("Money").dataSource = StatTracker.instance;
+        document.rootVisualElement.Q("Charisma").dataSource = StatTracker.instance;
+        document.rootVisualElement.Q("Hygeine").dataSource = StatTracker.instance;
+        document.rootVisualElement.Q("Day").dataSource = StatTracker.instance;
+        document.rootVisualElement.Q("Mood").dataSource=StatTracker.instance;
+    }
     private void onAllButtonClick(ClickEvent evt)
     {
         Button button = evt.target as Button;
@@ -78,7 +101,7 @@ public class RoomMenuManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        statUI();
     }
 
     // Update is called once per frame
