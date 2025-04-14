@@ -58,8 +58,8 @@ public class MonitorMenuManager : MonoBehaviour
 
         Label diligenceField = document.rootVisualElement.Q("Diligence") as Label;
         Label charismaField = document.rootVisualElement.Q("Charisma") as Label;
-        Label hygeineField = document.rootVisualElement.Q("Mood") as Label;
-        Label moodField = document.rootVisualElement.Q("Hygeine") as Label;
+        Label hygeineField = document.rootVisualElement.Q("Hygeine") as Label;
+        Label moodField = document.rootVisualElement.Q("Mood") as Label;
         diligenceField.style.color = new Color(2.0f * (1-normalizedDiligence), 2.0f * normalizedDiligence, 0);
         charismaField.style.color = new Color(2.0f * (1-normalizedCharisma), 2.0f * normalizedCharisma, 0);
         hygeineField.style.color = new Color(2.0f * (1-normalizedHygeine), 2.0f * normalizedHygeine, 0);
@@ -71,6 +71,22 @@ public class MonitorMenuManager : MonoBehaviour
         document.rootVisualElement.Q("Hygeine").dataSource = StatTracker.instance;
         document.rootVisualElement.Q("Day").dataSource = StatTracker.instance;
         document.rootVisualElement.Q("Mood").dataSource=StatTracker.instance;
+
+        if(StatTracker.instance.timeElapsed==0)
+        {
+            document.rootVisualElement.Q("SunMoon").style.backgroundColor = new Color (0,0,0,0);
+            document.rootVisualElement.Q("SunMoon").style.unityBackgroundImageTintColor = new Color (231.0f/255, 216.0f/255, 73.0f/255);
+        }
+        else if(StatTracker.instance.timeElapsed==1)
+        {
+            document.rootVisualElement.Q("SunMoon").style.backgroundColor = new Color (0,0,0,0);
+            document.rootVisualElement.Q("SunMoon").style.unityBackgroundImageTintColor = new Color (179.0f/255, 165.0f/255, 43.0f/255);
+        }
+        else
+        {
+            document.rootVisualElement.Q("SunMoon").style.backgroundColor = new Color (0, 0 , 0, 255);
+            document.rootVisualElement.Q("SunMoon").style.unityBackgroundImageTintColor = new Color (255/255, 255/255, 255/255);
+        }
     }
     private void onAllButtonClick(ClickEvent evt)
     {
@@ -141,6 +157,7 @@ public class MonitorMenuManager : MonoBehaviour
                 SceneManager.LoadSceneAsync("GameMenu");
             }
         }
+        statUI();
     }
 }
 

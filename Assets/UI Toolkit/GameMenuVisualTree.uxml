@@ -1,7 +1,7 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/USS%20Styling/monitorMenu.uss?fileID=7433441132597879392&amp;guid=58442d44b2eea4ab4b22cc23e04c6de8&amp;type=3#monitorMenu" />
     <ui:VisualElement name="VisualElement" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; background-image: url(&quot;project://database/Assets/Art/sketch.png?fileID=2800000&amp;guid=4f5915e4d916540929500b21b368f18c&amp;type=3#sketch&quot;);">
-        <ui:VisualElement name="SunMoon" style="flex-grow: 1; left: 1644px; right: -124px; height: 400px; width: 400px; position: absolute; top: -112px; background-image: url(&quot;project://database/Packages/dev.yarnspinner.unity/Textures/LastLineSeparator.png?fileID=2800000&amp;guid=04a26af393c8742a3bdf84b43bed6c16&amp;type=3#LastLineSeparator&quot;); -unity-background-image-tint-color: rgb(231, 216, 73);" />
+        <ui:VisualElement name="SunMoon" style="flex-grow: 1; left: 1644px; right: -124px; height: 400px; width: 400px; position: absolute; top: -112px; background-image: url(&quot;project://database/Packages/dev.yarnspinner.unity/Textures/LastLineSeparator.png?fileID=2800000&amp;guid=04a26af393c8742a3bdf84b43bed6c16&amp;type=3#LastLineSeparator&quot;); -unity-background-image-tint-color: rgb(178, 165, 43);" />
         <ui:Label text="0" name="Day" style="position: absolute; font-size: 80px; top: 3%; left: 92%; -unity-font-style: bold;">
             <Bindings>
                 <ui:DataBinding property="text" data-source-path="daysElapsed" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
@@ -27,7 +27,7 @@
             <ui:VisualElement name="DiligenceIcon" style="flex-grow: 1; position: absolute; height: 48px; width: 49px; left: 24px; top: 12px;" />
             <ui:Label text="0&#10;" name="Diligence" style="position: absolute; left: 78px; font-size: 36px; top: 4px;">
                 <Bindings>
-                    <ui:DataBinding property="text" data-source-path="charisma" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
+                    <ui:DataBinding property="text" data-source-path="dilligence" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
                 </Bindings>
             </ui:Label>
         </ui:VisualElement>
@@ -35,7 +35,7 @@
             <ui:VisualElement name="HygeineIcon" style="flex-grow: 1; position: absolute; height: 48px; width: 47px; top: 12px; left: 28px;" />
             <ui:Label text="0&#10;" name="Hygeine" style="position: absolute; left: 78px; font-size: 36px; top: 4px;">
                 <Bindings>
-                    <ui:DataBinding property="text" data-source-path="charisma" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
+                    <ui:DataBinding property="text" data-source-path="hygeine" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
                 </Bindings>
             </ui:Label>
         </ui:VisualElement>

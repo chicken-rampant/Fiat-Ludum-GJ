@@ -41,21 +41,23 @@ public class RoomMenuManager : MonoBehaviour
         }
     }
 
-    private void statUI()
+     private void statUI()
     {
-        float normalizedMood = (StatTracker.instance.mood+50)/100;
-        float normalizedCharisma = (StatTracker.instance.charisma+50)/100;
-        float normalizedDiligence = (StatTracker.instance.dilligence+50)/100;
-        float normalizedHygeine = (StatTracker.instance.hygeine+50)/100;
+        float normalizedMood = (StatTracker.instance.mood+50)/100.0f;
+        float normalizedCharisma = (StatTracker.instance.charisma+50)/100.0f;
+        float normalizedDiligence = (StatTracker.instance.dilligence+50)/100.0f;
+        float normalizedHygeine = (StatTracker.instance.hygeine+50)/100.0f;
 
         Label diligenceField = document.rootVisualElement.Q("Diligence") as Label;
         Label charismaField = document.rootVisualElement.Q("Charisma") as Label;
-        Label hygeineField = document.rootVisualElement.Q("Mood") as Label;
-        Label moodField = document.rootVisualElement.Q("Hygeine") as Label;
-        diligenceField.style.color = new Color(2.0f * (1-normalizedDiligence), 2.0f * normalizedDiligence, 0);
-        charismaField.style.color = new Color(2.0f * (1-normalizedCharisma), 2.0f * normalizedCharisma, 0);
-        hygeineField.style.color = new Color(2.0f * (1-normalizedHygeine), 2.0f * normalizedHygeine, 0);
-        moodField.style.color = new Color(2.0f * (1-normalizedMood), 2.0f * normalizedMood, 0);
+        Label hygeineField = document.rootVisualElement.Q("Hygeine") as Label;
+        Label moodField = document.rootVisualElement.Q("Mood") as Label;
+        diligenceField.style.color = new Color(2.0f * (1.0f-normalizedDiligence), 2.0f * normalizedDiligence, 0);
+        Debug.Log(normalizedDiligence + " " +2.0f*normalizedDiligence);
+        charismaField.style.color = new Color(2.0f * (1.0f-normalizedCharisma), 2.0f * normalizedCharisma, 0);
+        hygeineField.style.color = new Color(2.0f * (1.0f-normalizedHygeine), 2.0f * normalizedHygeine, 0);
+        Debug.Log("h" + normalizedHygeine + " " +2.0f*normalizedHygeine);
+        moodField.style.color = new Color(2.0f * (1.0f-normalizedMood), 2.0f * normalizedMood, 0);
 
         document.rootVisualElement.Q("Diligence").dataSource = StatTracker.instance;
         document.rootVisualElement.Q("Money").dataSource = StatTracker.instance;
@@ -63,7 +65,25 @@ public class RoomMenuManager : MonoBehaviour
         document.rootVisualElement.Q("Hygeine").dataSource = StatTracker.instance;
         document.rootVisualElement.Q("Day").dataSource = StatTracker.instance;
         document.rootVisualElement.Q("Mood").dataSource=StatTracker.instance;
+
+       if(StatTracker.instance.timeElapsed==0)
+        {
+            document.rootVisualElement.Q("SunMoon").style.backgroundColor = new Color (0,0,0,0);
+            document.rootVisualElement.Q("SunMoon").style.unityBackgroundImageTintColor = new Color (231.0f/255, 216.0f/255, 73.0f/255);
+        }
+        else if(StatTracker.instance.timeElapsed==1)
+        {
+            document.rootVisualElement.Q("SunMoon").style.backgroundColor = new Color (0,0,0,0);
+            document.rootVisualElement.Q("SunMoon").style.unityBackgroundImageTintColor = new Color (179.0f/255, 165.0f/255, 43.0f/255);
+        }
+        else
+        {
+            document.rootVisualElement.Q("SunMoon").style.backgroundColor = new Color (0, 0 , 0, 255);
+            document.rootVisualElement.Q("SunMoon").style.unityBackgroundImageTintColor = new Color (255/255, 255/255, 255/255);
+        }
     }
+
+
     private void onAllButtonClick(ClickEvent evt)
     {
         Button button = evt.target as Button;
@@ -101,12 +121,14 @@ public class RoomMenuManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        StatTracker.instance.eventChecker();
         statUI();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //StatTracker.instance.eventChecker();
+        statUI();
     }
 }

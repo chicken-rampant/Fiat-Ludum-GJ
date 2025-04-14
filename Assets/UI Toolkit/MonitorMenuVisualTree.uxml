@@ -28,7 +28,7 @@
                 <ui:VisualElement name="DiligenceIcon" style="flex-grow: 1; position: absolute; height: 48px; width: 49px; left: 24px; top: 12px;" />
                 <ui:Label text="0&#10;" name="Diligence" style="position: absolute; left: 78px; font-size: 36px; top: 4px;">
                     <Bindings>
-                        <ui:DataBinding property="text" data-source-path="charisma" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
+                        <ui:DataBinding property="text" data-source-path="dilligence" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
                     </Bindings>
                 </ui:Label>
             </ui:VisualElement>
@@ -36,7 +36,7 @@
                 <ui:VisualElement name="HygeineIcon" style="flex-grow: 1; position: absolute; height: 48px; width: 47px; top: 12px; left: 28px;" />
                 <ui:Label text="0&#10;" name="Hygeine" style="position: absolute; left: 78px; font-size: 36px; top: 4px;">
                     <Bindings>
-                        <ui:DataBinding property="text" data-source-path="charisma" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
+                        <ui:DataBinding property="text" data-source-path="hygeine" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
                     </Bindings>
                 </ui:Label>
             </ui:VisualElement>
