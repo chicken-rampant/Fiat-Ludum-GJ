@@ -126,6 +126,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -384,7 +397,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      genshin_0: 4012067668994307948
+      genshin_1: 708461221987263137
+      genshin_10: 4834218701551502092
+      genshin_2: 9114572221933864213
+      genshin_3: -5591959878962049564
+      genshin_4: -7346829288925553845
+      genshin_5: 2844348237478080498
+      genshin_6: -496205024215446796
+      genshin_7: -4020578506828156822
+      genshin_8: -2896025065097158425
+      genshin_9: 2202126807814672904
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

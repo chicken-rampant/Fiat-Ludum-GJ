@@ -33,15 +33,27 @@
     width: 885px;
     top: 30px;
     left: 503px;
-    background-color: rgb(245, 245, 220);
+    background-color: rgb(121, 169, 198);
     opacity: 1;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
+    -unity-background-image-tint-color: rgb(132, 179, 209);
+}
+
+.GachaPanelActive2 {
+    transition-duration: 0.5s;
+    width: 959px;
+    height: 1028px;
+    left: 463px;
+    top: 16px;
+    background-color: rgb(40, 92, 123);
+    -unity-background-image-tint-color: rgb(68, 68, 68);
+    opacity: 0.95;
 }
 
 .GachaPanelDefault {
-    top: -100%;
     opacity: 0;
+    top: -100%;
 }
