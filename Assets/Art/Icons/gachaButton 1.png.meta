@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: df56c0445044dfe478a77519094d9763
+guid: 31024ef7bb5191e4482b9832cd114750
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1978668812044671641
-    second: codeButton_0
-  - first:
-      213: -3801582437124369751
-    second: codeButton_1
+      213: 236688855278964309
+    second: gachaButton 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: codeButton_0
+      name: gachaButton 1_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 11
-        width: 90
-        height: 127
+        x: 15
+        y: 14
+        width: 129
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 99a11161dc4a57b10800000000000000
-      internalID: 1978668812044671641
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: codeButton_1
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 29
-        width: 67
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a296d24ae01e3bc0800000000000000
-      internalID: -3801582437124369751
+      spriteID: 55e42358243e84300800000000000000
+      internalID: 236688855278964309
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -159,9 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      codeButton_0: 1978668812044671641
-      codeButton_1: -3801582437124369751
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
