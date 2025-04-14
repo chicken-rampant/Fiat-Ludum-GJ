@@ -27,7 +27,7 @@
                 </ui:Label>
             </ui:VisualElement>
             <ui:VisualElement name="MoodContainer" style="flex-grow: 1; position: absolute; height: 69px; width: 152px; top: 12px; left: 125px; background-image: url(&quot;project://database/Packages/dev.yarnspinner.unity/Textures/CharacterBubble.png?fileID=2800000&amp;guid=2b62f169ad6c04c2d9a3fa4e8c3aa694&amp;type=3#CharacterBubble&quot;); -unity-background-image-tint-color: rgba(255, 255, 255, 0);">
-                <ui:VisualElement name="MoodIcon" style="flex-grow: 1; position: absolute; height: 50px; width: 55px; top: 10px; left: 24px;" />
+                <ui:VisualElement name="MoodIcon" style="flex-grow: 1; position: absolute; height: 50px; width: 55px; top: 10px; left: 24px; background-image: url(&quot;project://database/Assets/Art/Icons/mood.png?fileID=2800000&amp;guid=843b8e270820ef942b7fb1344f1d04bd&amp;type=3#mood&quot;);" />
                 <ui:Label text="0&#10;" name="Mood" style="position: absolute; left: 78px; font-size: 36px; top: 2px;">
                     <Bindings>
                         <ui:DataBinding property="text" data-source-path="mood" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
@@ -50,12 +50,12 @@
             </ui:Label>
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="SideMenu" style="flex-grow: 1; width: 23%; height: 60%; background-color: rgb(245, 245, 203); border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-bottom-left-radius: 30px; left: 76.5%; bottom: 22.3%; position: absolute; display: none;">
+    <ui:VisualElement name="SideMenu" style="flex-grow: 1; width: 411px; height: 457px; background-color: rgb(196, 194, 182); border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-bottom-left-radius: 30px; left: 929px; bottom: 601px; position: absolute; display: flex; color: rgb(202, 191, 164);">
         <ui:VisualElement style="flex-grow: 1; background-color: rgb(245, 245, 225); border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-bottom-left-radius: 30px; height: 13%; min-height: 0%; background-size: 100% 50%; -unity-background-scale-mode: stretch-to-fill; position: absolute; width: 95%; left: 2.5%; top: 2%;">
-            <ui:Label text="Activity Name" name="ActivityName" style="background-color: rgba(245, 245, 235, 0); border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-bottom-left-radius: 30px; align-self: center; font-size: 60px; top: 0%;" />
+            <ui:Label text="Activity Name" name="ActivityName" style="background-color: rgba(245, 245, 235, 0); border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-bottom-left-radius: 30px; align-self: center; font-size: 45px; top: 0%;" />
         </ui:VisualElement>
-        <ui:VisualElement name="ImagePlaceholder" style="flex-grow: 1; position: absolute; width: 95%; height: 50%; top: 15%; background-color: rgb(255, 255, 255); left: 2.5%; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;" />
-        <ui:VisualElement name="StatChangePlaceholder" style="flex-grow: 1; position: absolute; top: 65%; width: 50%; height: 8%; background-color: rgb(0, 0, 0); left: 2.5%; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;" />
+        <ui:VisualElement name="ImagePlaceholder" style="flex-grow: 1; position: absolute; width: 95%; height: 50%; top: 15%; background-color: rgb(199, 197, 186); left: 2.5%; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;" />
+        <ui:VisualElement name="StatChangePlaceholder" style="flex-grow: 1; position: absolute; top: 65%; width: 50%; height: 8%; background-color: rgba(0, 0, 0, 0); left: 2.5%; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;" />
         <ui:VisualElement style="flex-grow: 1; position: absolute; top: 74%; left: 2.5%; width: 95%; height: 23%; background-color: rgba(245, 245, 230, 0.78); border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-bottom-left-radius: 30px;">
             <ui:Label text="Description Placeholder" name="DescriptionText" style="position: absolute; width: 95%; left: 2.5%; top: 2.5%; height: 95%; border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-bottom-left-radius: 30px; font-size: 26px;" />
         </ui:VisualElement>
