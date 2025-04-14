@@ -15,6 +15,15 @@ public class RoomMenuManager : MonoBehaviour
     
     private void initHashmaps()
     {
+        buttonHoverMap.Add("MonitorMenu", new HoverBehaviorContainer ("Monitor", "Gain access to all your favorite online activities"));
+        buttonHoverMap.Add("Outside", new HoverBehaviorContainer("The Outside", "It frightens you. Who knows what will happen when you venture out there..."));
+        buttonHoverMap.Add("Cleaning", new HoverBehaviorContainer("Clean", "Give in to your mom's wishes and clean your room. Increases diligence and hygeine."));
+        buttonHoverMap.Add("Sleep", new HoverBehaviorContainer("Sleeping", "Let your body rest, restoring energy and mental fortitude"));
+        buttonHoverMap.Add("Shower", new HoverBehaviorContainer("Shower", "It's intimidating, but it is vital for survival. Increases hygeine and mood"));
+        buttonHoverMap.Add("CharismaStat", new HoverBehaviorContainer("Charisma", "One of your primary stats. Increased through talking with friends and other various methods..."));
+        buttonHoverMap.Add("MoodStat", new HoverBehaviorContainer("Mood", "One of your primary stats, and the one that fluctuates the most. Keep it up, or bad things may happen..."));
+        buttonHoverMap.Add("DiligenceStat", new HoverBehaviorContainer("Diligence", "One of your primary stats. Increased by drawing and other various activities..."));
+        buttonHoverMap.Add("HygeineStat", new HoverBehaviorContainer("Hygeine", "Another one of your primary stats. Increased by cleaning, showering, and other activities. I wonder what happens if it's negative by day 10..."));
 
     }
 
@@ -89,22 +98,22 @@ public class RoomMenuManager : MonoBehaviour
         Button button = evt.target as Button;
         Debug.Log(evt.target);
         
-        SceneManager.LoadSceneAsync(button.name);
+        if(!button.ClassListContains("notScene"))
+        {
+            SceneManager.LoadSceneAsync(button.name);
+        }
     }
     private void onHoverButton(PointerEnterEvent evt)
     {
         Button button = evt.target as Button;
         Debug.Log(evt.target);
 
-        if(!button.name.Equals("MonitorMenu"))
-        {
-            sideMenuCard.text = button.name;
-            sideMenuImage.style.backgroundImage = button.style.backgroundImage;
+        sideMenuCard.text = buttonHoverMap[button.name].label;
+            //sideMenuImage.style.backgroundImage = button.style.backgroundImage;
+        sideMenuDescription.text = buttonHoverMap[button.name].description;
 
-            //sideMenuDescription.text = buttonHoverMap[button.name].description;
-            //sideMenuStatChanges.style.backgroundImage = Background.FromSprite(buttonHoverMap[button.name].statChanges);
-            sideMenu.style.display = DisplayStyle.Flex;
-        }
+        sideMenu.style.display = DisplayStyle.Flex;
+        
     }
     private void onStopHovering(PointerLeaveEvent evt)
     {

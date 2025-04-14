@@ -21,14 +21,17 @@ public class MonitorMenuManager : MonoBehaviour
     {
         buttonHoverMap.Add("Friends", new HoverBehaviorContainer("Calling Friends", "A way to communicate with fellow human beings, increasing charisma."));
         buttonHoverMap.Add("Art", new HoverBehaviorContainer("Art Commissions", "A way to make some pocket change outside of your allowance. Scales with diligence. Also increases diligence"));
-        buttonHoverMap.Add("SocialMedia", new HoverBehaviorContainer("Social Media", "A land where anything can happen. ???"));
+        buttonHoverMap.Add("SocialMedia", new HoverBehaviorContainer("Social Media", "Surf the interwebs. Almost anything can happen..."));
         buttonHoverMap.Add("LeetCode", new HoverBehaviorContainer("Leet Code", "A return to your CS major roots. Increases diligence greatly at the cost of mental stability."));
-        buttonHoverMap.Add("Gacha", new HoverBehaviorContainer("Gacha", "The place that can and will fulfill your best dreams and worst knightmares."));
-        buttonHoverMap.Add("AzurLane", new HoverBehaviorContainer("Blue Avenue", "The safest gacha, the one where the least can go wrong..."));
-        buttonHoverMap.Add("Prosekai", new HoverBehaviorContainer("Noobsekai", "A nice in-between in terms of volatility. Higher highs but not tremendous lows."));
-        buttonHoverMap.Add("Genshin", new HoverBehaviorContainer("G Game", "A step up from noobsekai in volatility. What you may get is anyone's guess."));
-        buttonHoverMap.Add("FGO", new HoverBehaviorContainer("Destiny Monumentous Order", "The most volatile gacha. It is said that something also lurks here..."));
-
+        buttonHoverMap.Add("Gacha", new HoverBehaviorContainer("Gacha", "Your addiction."));
+        buttonHoverMap.Add("AzurLane", new HoverBehaviorContainer("Blue Avenue", "A game where ships are turned into waifus. The safest gacha, the one where the least can go wrong..."));
+        buttonHoverMap.Add("Prosekai", new HoverBehaviorContainer("Noobsekai", "A rhythm game built off the backs of vocaldois. A nice in-between in terms of volatility. Higher highs but not tremendous lows."));
+        buttonHoverMap.Add("Genshin", new HoverBehaviorContainer("G Game", "Created by M Company. A very popular open world game, and a step up from noobsekai in volatility. What you may get is anyone's guess."));
+        buttonHoverMap.Add("FGO", new HoverBehaviorContainer("DM Order", "Destiny Monumentous Order. A grindy turn-player-based game, and the most volatile gacha. It is said that something special also lurks here..."));
+        buttonHoverMap.Add("CharismaStat", new HoverBehaviorContainer("Charisma", "One of your primary stats. Increased through talking with friends and other various methods..."));
+        buttonHoverMap.Add("MoodStat", new HoverBehaviorContainer("Mood", "One of your primary stats, and the one that fluctuates the most. Keep it up, or bad things may happen..."));
+        buttonHoverMap.Add("DiligenceStat", new HoverBehaviorContainer("Diligence", "One of your primary stats. Increased by drawing and other various activities..."));
+        buttonHoverMap.Add("HygeineStat", new HoverBehaviorContainer("Hygeine", "Another one of your primary stats. Increased by cleaning, showering, and other activities. I wonder what happens if it's negative by day 10..."));
 
     }
 
@@ -114,7 +117,7 @@ public class MonitorMenuManager : MonoBehaviour
             gachaMenu.AddToClassList("GachaPanelDefault");
             menuState=0;
         }
-        else
+        else if(!button.ClassListContains("notScene"))
         {
             SceneManager.LoadSceneAsync(button.name);
         }
@@ -124,10 +127,10 @@ public class MonitorMenuManager : MonoBehaviour
         Button button = evt.target as Button;
         Debug.Log(evt.target);
 
-        if(!button.name.Equals("Back"))
+        if(!button.name.Equals("Back")&&!button.name.Equals("GameMenu"))
         {
             sideMenuCard.text = buttonHoverMap[button.name].label;
-            sideMenuImage.style.backgroundImage = button.style.backgroundImage;
+            //sideMenuImage.style.backgroundImage = button.style.backgroundImage;
             sideMenuDescription.text = buttonHoverMap[button.name].description;
 
             sideMenu.style.display = DisplayStyle.Flex;

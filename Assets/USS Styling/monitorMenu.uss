@@ -57,3 +57,6 @@
     opacity: 0;
     top: -100%;
 }
+
+.notScene {
+}
