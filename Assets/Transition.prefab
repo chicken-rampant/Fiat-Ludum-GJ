@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 2688836883520346170}
-  scene: MainMenu
+  scene: GameMenu
   transitionTime: 1.5
 --- !u!1 &2026625567471526677
 GameObject:
@@ -162,8 +162,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 399.76, y: 225.4263}
-  m_SizeDelta: {x: 799.51, y: 450.8525}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7028647617759659819
 CanvasRenderer:

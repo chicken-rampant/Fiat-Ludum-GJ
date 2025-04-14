@@ -812,7 +812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5356101847224222505, guid: d5b755368abdbdc4595d8af9562d0baf, type: 3}
       propertyPath: transitionTime
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5839944236515950333, guid: d5b755368abdbdc4595d8af9562d0baf, type: 3}
       propertyPath: m_SizeDelta.x
