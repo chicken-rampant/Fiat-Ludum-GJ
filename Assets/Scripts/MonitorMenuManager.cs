@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
 using System.Runtime.CompilerServices;
+using System.Linq.Expressions;
 
 public class MonitorMenuManager : MonoBehaviour
 {
@@ -18,6 +19,16 @@ public class MonitorMenuManager : MonoBehaviour
 
     private void initHashmaps()
     {
+        buttonHoverMap.Add("Friends", new HoverBehaviorContainer("Calling Friends", "A way to communicate with fellow human beings, increasing charisma."));
+        buttonHoverMap.Add("Art", new HoverBehaviorContainer("Art Commissions", "A way to make some pocket change outside of your allowance. Scales with diligence. Also increases diligence"));
+        buttonHoverMap.Add("SocialMedia", new HoverBehaviorContainer("Social Media", "A land where anything can happen. ???"));
+        buttonHoverMap.Add("LeetCode", new HoverBehaviorContainer("Leet Code", "A return to your CS major roots. Increases diligence greatly at the cost of mental stability."));
+        buttonHoverMap.Add("Gacha", new HoverBehaviorContainer("Gacha", "The place that can and will fulfill your best dreams and worst knightmares."));
+        buttonHoverMap.Add("AzurLane", new HoverBehaviorContainer("Blue Avenue", "The safest gacha, the one where the least can go wrong..."));
+        buttonHoverMap.Add("Prosekai", new HoverBehaviorContainer("Noobsekai", "A nice in between in terms of volatility. Higher highs but not tremendous lows."));
+        buttonHoverMap.Add("Genshin", new HoverBehaviorContainer("G Game", "A step up from noobsekai in volatility. What you maay get is anyone's guess."));
+        buttonHoverMap.Add("FGO", new HoverBehaviorContainer("Destiny Monumentous Order", "The most volatile gacha. It is said that something also lurks here..."));
+
 
     }
 
@@ -113,13 +124,12 @@ public class MonitorMenuManager : MonoBehaviour
         Button button = evt.target as Button;
         Debug.Log(evt.target);
 
-        if(!button.name.Equals("Gacha")&&!button.name.Equals("Back"))
+        if(!button.name.Equals("Back"))
         {
-            sideMenuCard.text = button.name;
+            sideMenuCard.text = buttonHoverMap[button.name].label;
             sideMenuImage.style.backgroundImage = button.style.backgroundImage;
+            sideMenuDescription.text = buttonHoverMap[button.name].description;
 
-            //sideMenuDescription.text = buttonHoverMap[button.name].description;
-            //sideMenuStatChanges.style.backgroundImage = Background.FromSprite(buttonHoverMap[button.name].statChanges);
             sideMenu.style.display = DisplayStyle.Flex;
         }
     }
@@ -163,12 +173,10 @@ public class MonitorMenuManager : MonoBehaviour
 
 public class HoverBehaviorContainer
 {
-    public Sprite statChanges;
     public string description;
     public string label;
-    public HoverBehaviorContainer(Sprite statChanges, string description, string label)
+    public HoverBehaviorContainer(string label, string description)
     {
-        this.statChanges = statChanges;
         this.description = description;
         this.label = label;
     }
