@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: db568a76673cc164b8ac7fac70dabf4f
+guid: ec1dffae909b7429eb9f166f6ec234bd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9160985531677494896
-    second: touchgrass_0
+      213: 5843985864524226762
+    second: Chair_0
+  - first:
+      213: -3557824870861491401
+    second: Chair_1
+  - first:
+      213: -1396135034660978453
+    second: Chair_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: touchgrass_0
+      name: Chair_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 82
+        y: 450
+        width: 11
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 091bed72234add080800000000000000
-      internalID: -9160985531677494896
+      spriteID: ac0ee575e220a1150800000000000000
+      internalID: 5843985864524226762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chair_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 347
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733304f412110aec0800000000000000
+      internalID: -3557824870861491401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chair_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 6
+        width: 39
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be00e80459eef9ce0800000000000000
+      internalID: -1396135034660978453
       vertices: []
       indices: 
       edges: []
@@ -147,8 +197,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      touchgrass_0: -9160985531677494896
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

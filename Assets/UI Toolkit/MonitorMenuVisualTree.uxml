@@ -1,54 +1,55 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/USS%20Styling/monitorMenu.uss?fileID=7433441132597879392&amp;guid=58442d44b2eea4ab4b22cc23e04c6de8&amp;type=3#monitorMenu" />
     <ui:VisualElement style="flex-grow: 1; position: absolute; width: 100%; height: 100%; background-image: url(&quot;project://database/Assets/Art/monitor2.png?fileID=2800000&amp;guid=2bf52b74ae5743b499339133c0e57e7c&amp;type=3#monitor2&quot;);">
-        <ui:VisualElement name="VisualElement" style="flex-grow: 1; position: absolute; width: 100%; height: 100%;">
-            <ui:VisualElement name="SunMoon" style="flex-grow: 1; left: 1644px; right: -124px; height: 400px; width: 400px; position: absolute; top: -112px; background-image: url(&quot;project://database/Packages/dev.yarnspinner.unity/Textures/LastLineSeparator.png?fileID=2800000&amp;guid=04a26af393c8742a3bdf84b43bed6c16&amp;type=3#LastLineSeparator&quot;); -unity-background-image-tint-color: rgb(231, 216, 73);" />
-            <ui:Label text="0" name="Day" style="position: absolute; font-size: 80px; top: 3%; left: 92%; -unity-font-style: bold;">
-                <Bindings>
-                    <ui:DataBinding property="text" data-source-path="daysElapsed" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
-                </Bindings>
-            </ui:Label>
-            <ui:VisualElement name="MoneyContainer" style="flex-grow: 1; position: absolute; height: 106px; width: 208px; top: 25px; left: 22px; color: rgb(209, 209, 209);">
-                <ui:Label text="$&#10;" name="DollarSign" style="position: absolute; left: 2%; top: 0%; font-size: 80px; height: 104px; width: 200px;" />
-                <ui:Label text="100" name="Money" style="font-size: 80px; left: 25%; top: 0%; width: 12%;">
-                    <Bindings>
-                        <ui:DataBinding property="text" data-source-path="money" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
-                    </Bindings>
-                </ui:Label>
-            </ui:VisualElement>
-            <ui:VisualElement name="CharismaContainer" style="flex-grow: 1; position: absolute; height: 69px; width: 152px; top: 315px; left: 28px; background-image: url(&quot;project://database/Packages/dev.yarnspinner.unity/Textures/CharacterBubble.png?fileID=2800000&amp;guid=2b62f169ad6c04c2d9a3fa4e8c3aa694&amp;type=3#CharacterBubble&quot;);">
-                <ui:VisualElement name="CharismaIcon" style="flex-grow: 1; position: absolute; height: 50px; width: 55px; top: 10px; left: 24px;" />
+        <ui:VisualElement style="flex-grow: 1; position: absolute; height: 147px; width: 287px; top: 26px; left: 8px; background-image: url(&quot;project://database/Packages/dev.yarnspinner.unity/Textures/CharacterBubble.png?fileID=2800000&amp;guid=2b62f169ad6c04c2d9a3fa4e8c3aa694&amp;type=3#CharacterBubble&quot;); -unity-background-image-tint-color: rgb(103, 149, 179); rotate: -9deg; opacity: 0.78;">
+            <ui:VisualElement name="CharismaContainer" style="flex-grow: 1; position: absolute; height: 69px; width: 152px; top: 10px; left: 20px; background-image: url(&quot;project://database/Packages/dev.yarnspinner.unity/Textures/CharacterBubble.png?fileID=2800000&amp;guid=2b62f169ad6c04c2d9a3fa4e8c3aa694&amp;type=3#CharacterBubble&quot;); -unity-background-image-tint-color: rgba(255, 255, 255, 0);">
+                <ui:VisualElement name="CharismaIcon" style="flex-grow: 1; position: absolute; height: 72px; width: 77px; top: -7px; left: 0; background-image: url(&quot;project://database/Assets/Art/Icons/charisma.png?fileID=2800000&amp;guid=34b4564177bea6a4982a2ef02f97669c&amp;type=3#charisma&quot;);" />
                 <ui:Label text="0&#10;" name="Charisma" style="position: absolute; left: 78px; font-size: 36px; top: 4px;">
                     <Bindings>
                         <ui:DataBinding property="text" data-source-path="charisma" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
                     </Bindings>
                 </ui:Label>
             </ui:VisualElement>
-            <ui:VisualElement name="DiligenceContainer" style="flex-grow: 1; position: absolute; height: 69px; width: 152px; top: 199px; left: 28px; background-image: url(&quot;project://database/Packages/dev.yarnspinner.unity/Textures/CharacterBubble.png?fileID=2800000&amp;guid=2b62f169ad6c04c2d9a3fa4e8c3aa694&amp;type=3#CharacterBubble&quot;);">
-                <ui:VisualElement name="DiligenceIcon" style="flex-grow: 1; position: absolute; height: 48px; width: 49px; left: 24px; top: 12px;" />
+            <ui:VisualElement name="DiligenceContainer" style="flex-grow: 1; position: absolute; height: 69px; width: 152px; top: 65px; left: 20px; background-image: url(&quot;project://database/Packages/dev.yarnspinner.unity/Textures/CharacterBubble.png?fileID=2800000&amp;guid=2b62f169ad6c04c2d9a3fa4e8c3aa694&amp;type=3#CharacterBubble&quot;); -unity-background-image-tint-color: rgba(173, 173, 173, 0);">
+                <ui:VisualElement name="DiligenceIcon" style="flex-grow: 1; position: absolute; height: 90px; width: 74px; left: 5px; top: -19px; background-image: url(&quot;project://database/Assets/Art/Icons/diligence.png?fileID=2800000&amp;guid=84029300ce2346f45a5cb90faee70441&amp;type=3#diligence&quot;);" />
                 <ui:Label text="0&#10;" name="Diligence" style="position: absolute; left: 78px; font-size: 36px; top: 4px;">
                     <Bindings>
                         <ui:DataBinding property="text" data-source-path="dilligence" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
                     </Bindings>
                 </ui:Label>
             </ui:VisualElement>
-            <ui:VisualElement name="HygeineContainer" style="flex-grow: 1; position: absolute; height: 69px; width: 152px; top: 257px; left: 28px; background-image: url(&quot;project://database/Packages/dev.yarnspinner.unity/Textures/CharacterBubble.png?fileID=2800000&amp;guid=2b62f169ad6c04c2d9a3fa4e8c3aa694&amp;type=3#CharacterBubble&quot;);">
-                <ui:VisualElement name="HygeineIcon" style="flex-grow: 1; position: absolute; height: 48px; width: 47px; top: 12px; left: 28px;" />
+            <ui:VisualElement name="HygeineContainer" style="flex-grow: 1; position: absolute; height: 69px; width: 152px; top: 64px; left: 126px; background-image: url(&quot;project://database/Packages/dev.yarnspinner.unity/Textures/CharacterBubble.png?fileID=2800000&amp;guid=2b62f169ad6c04c2d9a3fa4e8c3aa694&amp;type=3#CharacterBubble&quot;); -unity-background-image-tint-color: rgba(173, 174, 173, 0);">
+                <ui:VisualElement name="HygeineIcon" style="flex-grow: 1; position: absolute; height: 67px; width: 74px; top: -7px; left: 1px; background-image: url(&quot;project://database/Assets/Art/Icons/hygiene.png?fileID=2800000&amp;guid=27d6ad90f8461a842bc4842505d69a84&amp;type=3#hygiene&quot;);" />
                 <ui:Label text="0&#10;" name="Hygeine" style="position: absolute; left: 78px; font-size: 36px; top: 4px;">
                     <Bindings>
                         <ui:DataBinding property="text" data-source-path="hygeine" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
                     </Bindings>
                 </ui:Label>
             </ui:VisualElement>
-            <ui:VisualElement name="MoodContainer" style="flex-grow: 1; position: absolute; height: 80px; width: 200px; top: 130px; left: 28px; background-image: url(&quot;project://database/Packages/dev.yarnspinner.unity/Textures/CharacterBubble.png?fileID=2800000&amp;guid=2b62f169ad6c04c2d9a3fa4e8c3aa694&amp;type=3#CharacterBubble&quot;);">
+            <ui:VisualElement name="MoodContainer" style="flex-grow: 1; position: absolute; height: 69px; width: 152px; top: 12px; left: 125px; background-image: url(&quot;project://database/Packages/dev.yarnspinner.unity/Textures/CharacterBubble.png?fileID=2800000&amp;guid=2b62f169ad6c04c2d9a3fa4e8c3aa694&amp;type=3#CharacterBubble&quot;); -unity-background-image-tint-color: rgba(255, 255, 255, 0);">
                 <ui:VisualElement name="MoodIcon" style="flex-grow: 1; position: absolute; height: 50px; width: 55px; top: 10px; left: 24px;" />
-                <ui:Label text="0&#10;" name="Mood" style="position: absolute; left: 78px; font-size: 50px; top: 2px;">
+                <ui:Label text="0&#10;" name="Mood" style="position: absolute; left: 78px; font-size: 36px; top: 2px;">
                     <Bindings>
                         <ui:DataBinding property="text" data-source-path="mood" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
                     </Bindings>
                 </ui:Label>
             </ui:VisualElement>
         </ui:VisualElement>
+        <ui:VisualElement name="SunMoon" style="flex-grow: 1; left: 1644px; right: -124px; height: 400px; width: 400px; position: absolute; top: -112px; background-image: url(&quot;project://database/Packages/dev.yarnspinner.unity/Textures/LastLineSeparator.png?fileID=2800000&amp;guid=04a26af393c8742a3bdf84b43bed6c16&amp;type=3#LastLineSeparator&quot;); -unity-background-image-tint-color: rgb(231, 216, 73);" />
+        <ui:Label text="0" name="Day" style="position: absolute; font-size: 80px; top: 3%; left: 92%; -unity-font-style: bold;">
+            <Bindings>
+                <ui:DataBinding property="text" data-source-path="daysElapsed" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
+            </Bindings>
+        </ui:Label>
+        <ui:VisualElement name="MoneyContainer" style="flex-grow: 1; position: absolute; height: 106px; width: 208px; top: 966px; left: 1711px; color: rgb(209, 209, 209);">
+            <ui:Label text="$&#10;" name="DollarSign" style="position: absolute; left: 2%; top: 0%; font-size: 80px; height: 104px; width: 200px;" />
+            <ui:Label text="100" name="Money" style="font-size: 80px; left: 25%; top: 0%; width: 12%;">
+                <Bindings>
+                    <ui:DataBinding property="text" data-source-path="money" data-source-type="StatTracker, Assembly-CSharp" binding-mode="ToTarget" />
+                </Bindings>
+            </ui:Label>
+        </ui:VisualElement>
+        <ui:VisualElement name="VisualElement" style="flex-grow: 1; position: absolute; height: 647px; width: 398px; top: 390px; left: 11px; background-image: url(&quot;project://database/Assets/Art/Character/Mirror_View(3).png?fileID=2800000&amp;guid=ab0a32610d9f81d4997704a8d43e3432&amp;type=3#Mirror_View(3)&quot;); rotate: -10.5deg;" />
     </ui:VisualElement>
     <ui:VisualElement name="MainPanel" style="flex-grow: 1;">
         <ui:Button text="Gacha" name="Gacha" class="button gachamenu" style="left: 34%; top: 21%; font-size: 48px;" />

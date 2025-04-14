@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: db568a76673cc164b8ac7fac70dabf4f
+guid: bc1c8fe45050d476892fa8ad66b42175
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9160985531677494896
-    second: touchgrass_0
+      213: 9050546967464764145
+    second: Vacuum_0
+  - first:
+      213: -2097753911319562877
+    second: Vacuum_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: touchgrass_0
+      name: Vacuum_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 19
+        y: 568
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 091bed72234add080800000000000000
-      internalID: -9160985531677494896
+      spriteID: 1f2e9bad3800a9d70800000000000000
+      internalID: 9050546967464764145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vacuum_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 178
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3857c999ee743e2e0800000000000000
+      internalID: -2097753911319562877
       vertices: []
       indices: 
       edges: []
@@ -147,8 +172,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      touchgrass_0: -9160985531677494896
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

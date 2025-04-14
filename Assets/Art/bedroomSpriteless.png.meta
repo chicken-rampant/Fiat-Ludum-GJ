@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: db568a76673cc164b8ac7fac70dabf4f
+guid: fc780ae68b06f4e85ad9daf8a46288e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9160985531677494896
-    second: touchgrass_0
+      213: 8049877492552628720
+    second: bedroomSpriteless_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: touchgrass_0
+      name: bedroomSpriteless_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 091bed72234add080800000000000000
-      internalID: -9160985531677494896
+      spriteID: 0f9f20dede8e6bf60800000000000000
+      internalID: 8049877492552628720
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      touchgrass_0: -9160985531677494896
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
