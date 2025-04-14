@@ -372,7 +372,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MonitorSprite_0: 5882846020055419044
+      MonitorSprite_1: 7151995212865768943
+      MonitorSprite_2: 6122748979104885235
+      MonitorSprite_3: 1356021814754699338
+      MonitorSprite_4: -9179629851770918718
+      MonitorSprite_5: -4826825415609903393
+      MonitorSprite_6: -7392365147121022614
+      MonitorSprite_7: -6917804891323286075
+      MonitorSprite_8: 3410566062822669126
+      MonitorSprite_9: -6455860578737413304
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
