@@ -1,22 +1,30 @@
-﻿title: Start
+﻿title: Introduction
 tags:
 ---
-Narrator: Todays the big day!
-Narrator: Todays the big day!
+Narrator:
     -> Hi, where am I?
         Narrator: You're in Unity!
             -> Oh.
                 <<jump Oh>>
             -> How did I get here?
                 <<jump Unity>>
+                
+Narrator: Todays the big day!
 ===
 
 title: Oh
 ---
 Narrator: Yeah, fun, right?
+    <<jump Continue>>
 ===
 
 title: Unity
 ---
 Narrator: Someone read the Beginner's Guide!
+    <<jump Continue>>
+===
+
+title: Continue
+---
+Narrator: Todays the big day!
 ===

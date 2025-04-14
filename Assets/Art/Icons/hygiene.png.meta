@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: df56c0445044dfe478a77519094d9763
+guid: 27d6ad90f8461a842bc4842505d69a84
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1978668812044671641
-    second: codeButton_0
+      213: -7428938248790784167
+    second: hygiene_0
   - first:
-      213: -3801582437124369751
-    second: codeButton_1
+      213: 936603966203279347
+    second: hygiene_1
+  - first:
+      213: -8353381081095951544
+    second: hygiene_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: codeButton_0
+      name: hygiene_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 11
-        width: 90
-        height: 127
+        x: 14
+        y: 22
+        width: 63
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 99a11161dc4a57b10800000000000000
-      internalID: 1978668812044671641
+      spriteID: 957438ed50c17e890800000000000000
+      internalID: -7428938248790784167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: codeButton_1
+      name: hygiene_1
       rect:
         serializedVersion: 2
-        x: 55
-        y: 29
-        width: 67
-        height: 75
+        x: 75
+        y: 50
+        width: 59
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +143,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a296d24ae01e3bc0800000000000000
-      internalID: -3801582437124369751
+      spriteID: 3f7b4cc485c7ffc00800000000000000
+      internalID: 936603966203279347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hygiene_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 16
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84baec33a24d21c80800000000000000
+      internalID: -8353381081095951544
       vertices: []
       indices: 
       edges: []
@@ -150,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -159,9 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      codeButton_0: 1978668812044671641
-      codeButton_1: -3801582437124369751
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
