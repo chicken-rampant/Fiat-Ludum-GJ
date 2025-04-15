@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
 using System.ComponentModel;
+using System.Collections;
 
 public class RoomMenuManager : MonoBehaviour
 {
@@ -44,7 +45,6 @@ public class RoomMenuManager : MonoBehaviour
         sideMenuStatChanges = document.rootVisualElement.Q("StatChangePlaceholder");
 
         sideMenu.style.display = DisplayStyle.None;
-        container.AddToClassList("ContainerInactive");
 
         foreach(Button button in buttons)
         {
@@ -102,7 +102,6 @@ public class RoomMenuManager : MonoBehaviour
         
         if(!button.ClassListContains("notScene"))
         {
-            container.AddToClassList("ContainerInactive");
             SceneManager.LoadSceneAsync(button.name);
         }
     }
@@ -131,24 +130,14 @@ public class RoomMenuManager : MonoBehaviour
         }
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private IEnumerator coroutine;
     void Start()
     {
         StatTracker.instance.eventChecker();
         statUI();
-        fadeIn();
-        //container.RemoveFromClassList("ContainerInactive");
-    }
-
-    private void fadeIn()
-    {
-        double timeElapsed=0;
-        while(timeElapsed<10)
-        {
-            timeElapsed+=Time.deltaTime;
-        }
-        Debug.Log("Fade in activated");
         container.RemoveFromClassList("ContainerInactive");
     }
+
 
     // Update is called once per frame
     void Update()

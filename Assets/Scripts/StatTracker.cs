@@ -11,6 +11,7 @@ public class StatTracker : MonoBehaviour
     public int daysElapsed, timeElapsed, mood, hygeine, dilligence, charisma, money, 
     daysSinceGacha, daysSinceSlept, daysSinceCleaned, daysSinceForcedGachaPull;
 
+    bool allowanceUsed=false;
 
     public void resetStats()
     {
@@ -38,10 +39,12 @@ public class StatTracker : MonoBehaviour
             daysSinceGacha++;
             daysSinceSlept++;
             daysSinceForcedGachaPull++;
+            allowanceUsed=false;
         }
 
-        if(daysElapsed%7==0 && daysElapsed!=0)
+        if(daysElapsed%7==0 && daysElapsed!=0 &&!allowanceUsed)
         {
+            allowanceUsed=true;
             SceneManager.LoadSceneAsync("Allowance");
             return;
             //trigger allowance
