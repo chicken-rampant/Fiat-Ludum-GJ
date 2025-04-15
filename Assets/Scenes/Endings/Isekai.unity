@@ -539,7 +539,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2753718018764665327, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 9193005}
+      addedObject: {fileID: 9193006}
   m_SourcePrefab: {fileID: 100100000, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
 --- !u!1 &9193003 stripped
 GameObject:
@@ -551,24 +551,18 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7084386685998634907, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
   m_PrefabInstance: {fileID: 9193002}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &9193005
+--- !u!114 &9193006
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9193003}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97648ca278b12443cafada8a11ec7361, type: 3}
+  m_Script: {fileID: 11500000, guid: 186b902daf05348bd9273704b19d52c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeIncrement: 0
-  moodIncrement: 0
-  moneyIncrement: 1000
-  hygeineIncrement: 0
-  dilligenceIncrement: 0
-  charismaIncrement: 0
 --- !u!1 &26228701
 GameObject:
   m_ObjectHideFlags: 0
