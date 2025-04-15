@@ -66,10 +66,8 @@ public class RoomMenuManager : MonoBehaviour
         Label hygeineField = document.rootVisualElement.Q("Hygeine") as Label;
         Label moodField = document.rootVisualElement.Q("Mood") as Label;
         diligenceField.style.color = new Color(2.0f * (1.0f-normalizedDiligence), 2.0f * normalizedDiligence, 0);
-        Debug.Log(normalizedDiligence + " " +2.0f*normalizedDiligence);
         charismaField.style.color = new Color(2.0f * (1.0f-normalizedCharisma), 2.0f * normalizedCharisma, 0);
         hygeineField.style.color = new Color(2.0f * (1.0f-normalizedHygeine), 2.0f * normalizedHygeine, 0);
-        Debug.Log("h" + normalizedHygeine + " " +2.0f*normalizedHygeine);
         moodField.style.color = new Color(2.0f * (1.0f-normalizedMood), 2.0f * normalizedMood, 0);
 
         document.rootVisualElement.Q("Diligence").dataSource = StatTracker.instance;
@@ -148,6 +146,7 @@ public class RoomMenuManager : MonoBehaviour
         {
             timeElapsed+=Time.deltaTime;
         }
+        Debug.Log("Fade in activated");
         container.RemoveFromClassList("ContainerInactive");
     }
 
