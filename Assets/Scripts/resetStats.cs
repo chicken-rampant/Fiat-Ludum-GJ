@@ -1,12 +1,11 @@
 using UnityEngine;
 
-public class ending : MonoBehaviour
+public class resetStats : MonoBehaviour
 {
-    public Animator transition;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        StatTracker.instance.resetStats();
     }
 
     // Update is called once per frame
@@ -16,6 +15,5 @@ public class ending : MonoBehaviour
     }
     public void restart()
     {
-        transition.GetComponent<sceneManager>().advanceScene();
     }
 }

@@ -8,6 +8,7 @@ public class FGOHelper : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        StatTracker.instance.daysSinceGacha=0;
         int roll = Random.Range(1, 101);
         if(roll<=60)
         {
