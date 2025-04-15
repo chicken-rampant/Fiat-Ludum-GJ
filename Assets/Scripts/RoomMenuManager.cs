@@ -137,6 +137,17 @@ public class RoomMenuManager : MonoBehaviour
     {
         StatTracker.instance.eventChecker();
         statUI();
+        fadeIn();
+        //container.RemoveFromClassList("ContainerInactive");
+    }
+
+    private void fadeIn()
+    {
+        double timeElapsed=0;
+        while(timeElapsed<10)
+        {
+            timeElapsed+=Time.deltaTime;
+        }
         container.RemoveFromClassList("ContainerInactive");
     }
 

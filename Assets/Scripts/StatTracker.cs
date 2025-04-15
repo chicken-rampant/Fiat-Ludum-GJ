@@ -91,7 +91,7 @@ public class StatTracker : MonoBehaviour
             //trigger cockroach infestation
         }
 
-        if(mood<=-40)
+        if(mood<=-30)
         {
             SceneManager.LoadSceneAsync("CreditCardDebt");
             return;

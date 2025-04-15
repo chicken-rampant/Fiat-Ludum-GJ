@@ -16,6 +16,7 @@ public class ending : MonoBehaviour
     }
     public void restart()
     {
+        StatTracker.instance.resetStats();
         transition.GetComponent<sceneManager>().advanceScene();
     }
 }
