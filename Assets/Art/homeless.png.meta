@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      homeless_0: 2284372122762820446
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

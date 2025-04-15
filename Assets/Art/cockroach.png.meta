@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cockroach_0: -1927273192739970689
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
