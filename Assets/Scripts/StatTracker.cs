@@ -24,6 +24,7 @@ public class StatTracker : MonoBehaviour
         daysSinceCleaned=0;
         daysSinceGacha=0;
         daysSinceSlept=0;
+        daysSinceForcedGachaPull=0;
     }
 
     public void eventChecker()
