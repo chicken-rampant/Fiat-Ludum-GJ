@@ -39,7 +39,7 @@ public class StatTracker : MonoBehaviour
             daysSinceForcedGachaPull++;
         }
 
-        if(daysElapsed%7==0)
+        if(daysElapsed%7==0 && daysElapsed!=0)
         {
             SceneManager.LoadSceneAsync("Allowance");
             return;
