@@ -60,3 +60,14 @@
 
 .notScene {
 }
+
+.ContainerActive {
+    flex-grow: 1;
+    transition-duration: 0.5s;
+}
+
+.ContainerInactive {
+    opacity: 0;
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+}

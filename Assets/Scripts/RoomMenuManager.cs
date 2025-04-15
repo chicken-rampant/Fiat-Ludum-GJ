@@ -4,12 +4,13 @@ using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
+using System.ComponentModel;
 
 public class RoomMenuManager : MonoBehaviour
 {
     private UIDocument document;
     private List<Button> buttons = new List<Button>();
-    private VisualElement sideMenu, gachaMenu, sideMenuImage, sideMenuStatChanges;
+    private VisualElement sideMenu, gachaMenu, sideMenuImage, sideMenuStatChanges, container;
     private Label sideMenuCard, sideMenuDescription;
     Dictionary<string, HoverBehaviorContainer> buttonHoverMap = new Dictionary<string, HoverBehaviorContainer>();
     
@@ -23,7 +24,7 @@ public class RoomMenuManager : MonoBehaviour
         buttonHoverMap.Add("CharismaStat", new HoverBehaviorContainer("Charisma", "One of your primary stats. Increased through talking with friends and other various methods..."));
         buttonHoverMap.Add("MoodStat", new HoverBehaviorContainer("Mood", "One of your primary stats, and the one that fluctuates the most. Keep it up, or bad things may happen..."));
         buttonHoverMap.Add("DiligenceStat", new HoverBehaviorContainer("Diligence", "One of your primary stats. Increased by drawing and other various activities..."));
-        buttonHoverMap.Add("HygeineStat", new HoverBehaviorContainer("Hygeine", "Another one of your primary stats. Increased by cleaning, showering, and other activities. I wonder what happens if it's negative by day 10..."));
+        buttonHoverMap.Add("HygeineStat", new HoverBehaviorContainer("Hygeine", "Another one of your primary stats. Increased by cleaning, showering, and other activities."));
 
     }
 
@@ -34,6 +35,8 @@ public class RoomMenuManager : MonoBehaviour
         
         buttons = document.rootVisualElement.Query<Button>().ToList();
         sideMenu = document.rootVisualElement.Q("SideMenu");
+        container = document.rootVisualElement.Q("Container");
+        
 
         sideMenuCard = document.rootVisualElement.Q("ActivityName") as Label;
         sideMenuDescription = document.rootVisualElement.Q("DescriptionText") as Label;
@@ -41,6 +44,7 @@ public class RoomMenuManager : MonoBehaviour
         sideMenuStatChanges = document.rootVisualElement.Q("StatChangePlaceholder");
 
         sideMenu.style.display = DisplayStyle.None;
+        container.AddToClassList("ContainerInactive");
 
         foreach(Button button in buttons)
         {
@@ -100,6 +104,7 @@ public class RoomMenuManager : MonoBehaviour
         
         if(!button.ClassListContains("notScene"))
         {
+            container.AddToClassList("ContainerInactive");
             SceneManager.LoadSceneAsync(button.name);
         }
     }
@@ -132,6 +137,7 @@ public class RoomMenuManager : MonoBehaviour
     {
         StatTracker.instance.eventChecker();
         statUI();
+        container.RemoveFromClassList("ContainerInactive");
     }
 
     // Update is called once per frame
