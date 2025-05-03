@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <YarnspinnerLabel style="height: 401px; font-size: 32px; color: rgb(255, 18, 18); width: 770px; flex-wrap: wrap; white-space: normal;" />
+</ui:UXML>

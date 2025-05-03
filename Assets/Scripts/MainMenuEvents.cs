@@ -7,7 +7,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
 {
     private UIDocument document;
     private Button button;
-    public GameObject transition;
     GameObject music;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -17,7 +16,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
         document = GetComponent<UIDocument>();
         button = document.rootVisualElement.Q("startbutton") as Button;  
         button.RegisterCallback<ClickEvent>(onPlayGameClicked);
-        transition = GameObject.FindWithTag("Transition");
     }
     void Start()
     {
@@ -29,9 +27,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space)||Input.GetKeyDown(KeyCode.Return))
         {
-            //Debug.Log("continue clicked");
-            DontDestroyOnLoad(music);
-            SceneManager.LoadSceneAsync("IntroDialogue");        
+            onPlayGameClicked(new ClickEvent());       
         }
     }
 
@@ -43,6 +39,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
     private void onPlayGameClicked(ClickEvent evt)
     {
         DontDestroyOnLoad(music);
-        transition.GetComponent<sceneManager>().advanceScene();
+        SceneManager.LoadSceneAsync("IntroDialogue");
     }
 }
